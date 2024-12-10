@@ -1,4 +1,5 @@
 const data = null;
+const foto = document.getElementById("img")
 
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
@@ -8,6 +9,12 @@ xhr.addEventListener('readystatechange', function () {
 		let resultado = JSON.parse(this.response)
 		console.log(this.response);
 	    document.getElementById("%").value = resultado.percentage
+
+		if(resultado.percentage>=50){
+			foto.src = "https://cdn.memegenerator.es/descargar/4241362"
+		}else{
+		    foto.src = "https://img.chilango.com/2018/02/memes-14-de-febrero.jpg"
+		}
 	}
 });
 

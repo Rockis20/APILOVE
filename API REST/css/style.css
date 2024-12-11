@@ -36,10 +36,13 @@ button{
 
 }
 
-imagen{
+button:hover{
+    background: linear-gradient(45deg,#e7453c, #fced45 ) ;
+}
+
+.imagen{
     display: block;
-    max-width: 350px;
-    
+    max-width: 100px;
 }
 
 .container{
@@ -48,5 +51,5 @@ imagen{
     align-items: center;
     max-width: 320%;
     margin: 30px auto;
-
 }
+

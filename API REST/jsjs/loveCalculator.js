@@ -10,10 +10,14 @@ xhr.addEventListener('readystatechange', function () {
 		console.log(this.response);
 	    document.getElementById("%").value = resultado.percentage
 
-		if(resultado.percentage>=50){
+		if(resultado.percentage>50 && resultado.percentage>=75){
 			foto.src = "https://cdn.memegenerator.es/descargar/4241362"
-		}else{
-		    foto.src = "https://img.chilango.com/2018/02/memes-14-de-febrero.jpg"
+			foto.src = "https://media.tenor.com/GBdIH5sL4XQAAAAM/the-rock-rock.gif"
+		}if(resultado.percentage<=50 && resultado.percentage>=25){
+		    foto.src = "https://media.makeameme.org/created/si-se-puede-c93581e149.jpg"
+		}else if(resultado.percentage<25){
+			foto.src = "https://img.chilango.com/2018/02/memes-14-de-febrero.jpg"
+	
 		}
 	}
 });

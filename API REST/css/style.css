@@ -43,6 +43,7 @@ button:hover{
 .imagen{
     display: block;
     max-width: 100px;
+    
 }
 
 .container{
@@ -52,4 +53,3 @@ button:hover{
     max-width: 320%;
     margin: 30px auto;
 }
-
